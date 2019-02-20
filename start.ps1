@@ -6,7 +6,7 @@ function Get-Architecture {
 
 function Get-PrintBright {
     Set-ExecutionPolicy Bypass -Scope Process
-    Write-Host "Welcome to Power Shell SSH (via Putty)!" -foreground "Yellow"
+    Write-Host "Welcome to ColourfulWinSSH (via Putty)!" -foreground "Yellow"
     Write-Host "A way to connect to your SSH Terminal via Power Shell" -foreground "Yellow"
 }
 
@@ -39,4 +39,5 @@ function confirmScript{
 	    Invoke-Expression $cmd
        }
 }
+$host.UI.RawUI.WindowTitle = "ColourfulWinSSH - PowerShell"
 Get-Architecture
